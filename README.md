@@ -1,29 +1,29 @@
-# Lista Passo a Passo
+# Lista Paso a Paso
 
-## Subir o Container e Criar as Imagens
+## Levantar el Contenedor y Crear las Imágenes
 
-1. Certifique-se de que o Docker e o Docker Compose estão instalados.
-2. Navegue até o diretório do projeto: `/c:/prueba/`.
-3. Execute o comando para subir os serviços definidos no `docker-compose.yml`:
+1. Asegúrate de que Docker y Docker Compose están instalados.
+2. Navega al directorio del proyecto: `/c:/prueba/`.
+3. Ejecuta el comando para levantar los servicios definidos en `docker-compose.yml`:
    ```bash
    docker-compose up -d
    ```
 
-## Rodar o MySQL
+## Ejecutar MySQL
 
-1. Verifique se o container do MySQL está em execução:
+1. Verifica que el contenedor de MySQL está en ejecución:
    ```bash
    docker ps
    ```
-2. Acesse o MySQL dentro do container:
+2. Accede a MySQL dentro del contenedor:
    ```bash
-   docker exec -it <nome_do_container_mysql> mysql -u root -p
+   docker exec -it <nombre_del_contenedor_mysql> mysql -u root -p
    ```
-   Substitua `<nome_do_container_mysql>` pelo nome do container correspondente ao MySQL.
+   Sustituye `<nombre_del_contenedor_mysql>` por el nombre del contenedor correspondiente a MySQL.
 
-## Acessar `prueba1` e `prueba2`
+## Acceder a `prueba1` y `prueba2`
 
-1. Certifique-se de que os serviços `prueba1` e `prueba2` estão configurados no `docker-compose.yml`.
-2. Acesse os serviços pelos respectivos endereços no navegador:
+1. Asegúrate de que los servicios `prueba1` y `prueba2` están configurados en `docker-compose.yml`.
+2. Accede a los servicios en sus respectivas direcciones en el navegador:
    - `http://localhost/prueba1` para `prueba1`.
    - `http://localhost/prueba2/psychology-clinic/src/views/index.php` para `prueba2`.
