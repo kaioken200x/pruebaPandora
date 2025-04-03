@@ -9,21 +9,10 @@
    docker-compose up -d
    ```
 
-## Ejecutar MySQL
-
-1. Verifica que el contenedor de MySQL está en ejecución:
-   ```bash
-   docker ps
-   ```
-2. Accede a MySQL dentro del contenedor:
-   ```bash
-   docker exec -it <nombre_del_contenedor_mysql> mysql -u root -p
-   ```
-   Sustituye `<nombre_del_contenedor_mysql>` por el nombre del contenedor correspondiente a MySQL.
-
 ## Acceder a `prueba1` y `prueba2`
 
 1. Asegúrate de que los servicios `prueba1` y `prueba2` están configurados en `docker-compose.yml`.
 2. Accede a los servicios en sus respectivas direcciones en el navegador:
    - `http://localhost/prueba1` para `prueba1`.
+        - `el archivo data.csv` para importar los datos
    - `http://localhost/prueba2/psychology-clinic/src/views/index.php` para `prueba2`.
